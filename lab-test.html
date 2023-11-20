@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Lab Test Form
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1> Pharmacy </h1>
+    </header>
+
+    <form action="#" id="lab-test">
+        <img src="./Images/Lab-Test/lab-test.jpg" alt="lab-test">
+
+        <div class="input-sections">
+            <h2> 1. Your Contact Details </h2>
+            <input type="text" name="Full Name" id="full-name" placeholder="Full Name" required>
+            <input type="number" name="Patient ID" id="patient-id" placeholder="Patient Id If Exists"> <br>
+            <input type="number" name="Contact Number" id="contact-number" placeholder="Contact Number" required>
+            <input type="email" name="Email ID" id="email-id" placeholder="Email ID" required>
+        </div>
+
+        <div class="input-sections">
+            <h2> 2. Address </h2>
+            <input type="number" name="House Number" id="house-number" placeholder="House Number" required>
+            <input type="text" name="Street" id="street" placeholder="Street" required> <br>
+            <input type="text" name="Area" id="area" placeholder="Area" required>
+
+            <h3> District </h3>
+            <select name="District" id="district" required>
+                <option value="choose"> Choose </option>
+                <option value="district1"> District 1 </option>
+                <option value="district2"> District 2 </option>
+                <option value="district3"> District 3 </option>
+            </select>
+        </div>
+
+        <div class="input-sections">
+            <h2> 3. Choose the test type </h2>
+            <p> <b> (Check atleast one box without fail) </b> </p>
+            <input type="checkbox" name="CBC" id="cbc" class="checkbox">
+            <label for="CBC"> CBC </label> <br>
+            <input type="checkbox" name="Complete Urine" id="complete-urine" class="checkbox">
+            <label for="Complete Urine"> Complete Urine </label> <br>
+            <input type="checkbox" name="Lipid Profile" id="lipid-profile" class="checkbox">
+            <label for="Lipid Profile"> Lipid Profile </label> <br>
+            <input type="checkbox" name="TSH" id="tsh" class="checkbox">
+            <label for="Thyroid Stimulating Hormone(TSH)"> Thyroid Stimulating Hormone (TSH) </label> <br>
+            <input type="checkbox" name="Glucose Test" id="glucose-test" class="checkbox">
+            <label for="Glucose Test"> Glucose Test </label>
+        </div>
+
+        <div class="input-sections">
+            <h2> 4. Do you want a hard copy of the report also? </h2>
+            <input type="radio" name="hard-copy" id="yes" class="radio">
+            <label for="yes"> Yes </label> <br>
+            <input type="radio" name="hard-copy" id="no" class="radio">
+            <label for="no"> No </label>
+        </div>
+
+        <div class="input-sections">
+            <h2> 5. Select your comfortable date and time </h2>
+            <input type="date" name="Date" id="date" placeholder="Date" required>
+            <input type="time" name="Time" id="time" placeholder="Time" required>
+        </div>
+    </form>
+
+    <div id="button">
+        <button type="reset" class="lab-page-button"> Reset </button>
+        <button type="submit" class="lab-page-button"> Submit </button>
+    </div>
+
+    <footer>
+        <h6> @copyright. Only for demonstration purposes </h6>
+    </footer>
+
+</body>
+
+</html>

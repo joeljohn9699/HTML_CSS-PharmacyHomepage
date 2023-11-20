@@ -1,0 +1,263 @@
+/* Common setting */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    height: 100px;
+    line-height: 100px;
+    font-size: xx-large;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Homepage Styling */
+#nav-bar {
+    background-color: grey;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+}
+
+#nav-bar>li {
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#nav-bar>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+#nav-bar>li:hover {
+    background-color: black;
+}
+
+.dropdown {
+    display: none;
+    list-style-type: none;
+    text-align: left;
+}
+
+#nav-bar>li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
+#nav-bar>li:hover .dropdown li {
+    display: block;
+    position: relative;
+    color: whitesmoke;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nav-bar>li:hover .dropdown li a {
+    display: inline-block;
+    color: rgb(0, 155, 255);
+    text-decoration: none;
+}
+
+#offers {
+    height: 500px;
+    width: auto;
+    animation-name: images;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes images {
+    0% {
+        background-image: url(./Images/Animation/ani1.jpg);
+        border: 2px solid steelblue;
+    }
+
+    25% {
+        background-image: url(./Images/Animation/ani2.png);
+        border: 2px solid steelblue;
+    }
+
+    50% {
+        background-image: url(./Images/Animation/ani3.jpg);
+        border: 2px solid steelblue;
+    }
+
+    75% {
+        background-image: url(./Images/Animation/ani4.jpg);
+        border: 2px solid steelblue;
+    }
+
+    100% {
+        background-image: url(./Images/Animation/ani5.jpg);
+        border: 2px solid steelblue;
+    }
+}
+
+.products {
+    padding: 10px;
+    line-height: 25px;
+}
+
+.products>h2 {
+    font-size: xx-large;
+}
+
+.items {
+    display: inline-block;
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.items:hover {
+    width: 310px;
+    height: 330px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.items>h3 {
+    font-size: larger;
+}
+
+.items>img {
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+}
+
+.items>p {
+    color: blue;
+    font-size: large;
+}
+
+.items>button {
+    color: orange;
+    background-color: rgb(220, 240, 260);
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid blue;
+    margin-top: 5px;
+}
+
+.items>button:focus {
+    background-color: rgb(250, 234, 230);
+    border: rgb(0, 255, 76);
+}
+
+/* Lab-Test page Styling */
+#lab-test {
+    background-color: white;
+    margin: 5%;
+    margin-bottom: 1%;
+    height: 600px;
+    line-height: 200%;
+    box-shadow: 0px 0px 30px slategrey;
+    overflow: scroll;
+}
+
+#lab-test>img {
+    float: right;
+    height: 100%;
+    width: 50%;
+    position: sticky;
+    top: 0;
+}
+
+#lab-test>.input-sections {
+    padding: 2%;
+    width: 45%;
+    margin: 3%;
+    overflow: visible;
+}
+
+.input-sections>h2 {
+    font-size: xx-large;
+}
+
+.input-sections>input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 230px;
+    height: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.input-sections>h3 {
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.input-sections>#district {
+    width: 175px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+
+}
+
+.input-sections>.checkbox,
+.input-sections>.radio {
+    width: 15px;
+    height: 15px;
+}
+
+.input-sections>label {
+    font-size: larger;
+    margin: 5px;
+}
+
+#button {
+    margin-left: 40%;
+}
+
+.lab-page-button {
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+    font-size: larger;
+}
+
+.lab-page-button:hover {
+    background-color: rgb(119, 43, 226);
+    cursor: pointer;
+}
